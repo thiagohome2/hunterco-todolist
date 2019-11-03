@@ -2,12 +2,17 @@
 
 body {
   padding: 50px;
-  background-color: #f3f29a;
+  background-color: rgb(243, 245, 121);
   font-family: "Shadows Into Light", cursive;
 }
 
 .App {
   text-align: center;
+}
+.App h2 {
+  font-size: 40px;
+  color: red;
+  margin: 0;
 }
 
 .todolistmain:after {
@@ -22,11 +27,6 @@ body {
   height: 100%;
   opacity: 0.1;
   z-index: -1;
-}
-
-.todolistmain .header h2 {
-  font-size: 40px;
-  color: red;
 }
 
 .todolistmain .header input {
@@ -81,6 +81,7 @@ ul.theList {
 
 .theList li {
   width: 100%;
+  max-width: 900px;
   color: #000000;
   text-align: left;
   font-size: 30px;

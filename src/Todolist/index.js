@@ -1,0 +1,27 @@
+import React, { Component } from "react";
+import "./style.css";
+class TodoList extends Component {
+  componentDidUpdate() {
+    this.props.inputElement.current.focus();
+  }
+  render() {
+    return (
+      <div className="todolistmain">
+        <div className="header">
+          <h2>Lista de Tarefas</h2>
+          <form onSubmit={this.props.addItem}>
+            <input
+              placeholder="Descreva a tarefa..."
+              ref={this.props.inputElement}
+              value={this.props.currentItem.text}
+              onChange={this.props.handleInput}
+            />
+            <button type="submit"> Adicionar </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default TodoList;

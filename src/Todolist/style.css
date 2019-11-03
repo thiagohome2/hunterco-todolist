@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap");
+body {
+  padding: 50px;
+  background-color: #f3f29a;
+  /*font-family: "Pacifico", cursive;*/
+  font-family: "Shadows Into Light", cursive;
+  /*font-family: "Architects Daughter", cursive;*/
+  /*font-family: "Gochi Hand", cursive;*/
+}
+
+.App {
+  text-align: center;
+}
+.todolistmain .header h2 {
+  font-size: 40px;
+  color: red;
+}
+
+.todolistmain .header input {
+  font-family: "Shadows Into Light", cursive;
+  width: 400px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  width: 300px;
+}
+
+.todolistmain .header input:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.todolistmain .header button {
+  font-family: "Shadows Into Light", cursive;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.todolistmain .header button:hover {
+  border: 2px solid #666666;
+  color: #666666;
+  cursor: pointer;
+}
+
+.todolistmain .theList li {
+  color: #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+ul.theList {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.theList li {
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 40px;
+  padding: 7px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-out;
+}
+
+ul.theList li:hover {
+  background-color: rgb(235, 168, 168);
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: line-through;
+}
